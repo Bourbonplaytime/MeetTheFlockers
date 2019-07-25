@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: Red; text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* general styling */
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+li {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-style: inset;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0 3px 0 3px;
+  line-height: 2em;
+}
+
+a:hover {
+  background-color: black;
+  color: red;
+  text-decoration: none;
+}
+
+/* active link styling */
+.active {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-style: inset;
+  border-width: 4px;
+  border-color: white;
+  padding: 0 3px 0 3px;
+}
+
+.active:hover {
+  color: red;
+  text-decoration: none;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.Buildtheflock {
+  height: 400px;
+  width: 400px;
+}
+
+/* breakpoint for mobile */
+@media only screen and (max-width: 768px) {
+
+  li {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+  }
+
+  a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-style: inset;
+  }
+
+  a:hover {
+    background-color: black;
+    color: red;
+    text-decoration: none;
+  }
+
+}

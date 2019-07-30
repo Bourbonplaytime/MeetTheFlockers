@@ -27,5 +27,5 @@ class MapCS extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAI-IpLWqad3zwGlbjZDzzT8shPI2jgwoU'
+  apiKey: <MapsAPIKey>
 })(MapCS);

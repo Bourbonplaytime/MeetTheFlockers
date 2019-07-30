@@ -17,7 +17,7 @@ class Weather extends Component {
 
   /*api call and state population */
   componentDidMount(props) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.props.location}&appid=4f998dad4b447fa063008f06c99c0511&units=imperial`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.props.location}&appid=<WeatherAPIKey>&units=imperial`)
       .then(response => response.json())
       .then(data => {
          this.setState({ temperature: data.main.temp, high: data.main.temp_max, low: data.main.temp_min, humidity: data.main.humidity,

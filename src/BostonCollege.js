@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import MapCS from './Map';
 import Weather from './Weather'

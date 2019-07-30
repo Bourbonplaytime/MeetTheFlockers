@@ -23,7 +23,7 @@ class Stats extends Component {
   /*api call and state population */
   componentDidMount(props) {
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-    targetUrl = 'http://api.sportradar.us/ncaafb-t1/teams/LOU/2018/REG/statistics.json?api_key=<StatsAPIKey'
+    targetUrl = 'http://api.sportradar.us/ncaafb-t1/teams/LOU/2018/REG/statistics.json?api_key=<StatsAPIKey>'
     fetch(proxyUrl + targetUrl)
       .then(response => response.json())
       .then(stats => this.setState({ tdspass: stats.statistics.touchdowns.pass, tdsrush: stats.statistics.touchdowns.rush,
